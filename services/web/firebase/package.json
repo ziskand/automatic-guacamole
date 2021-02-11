@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "firebase:login": "firebase login",
+    "deploy": "firebase deploy --only hosting,firestore",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
