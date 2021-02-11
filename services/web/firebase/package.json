@@ -1,0 +1,19 @@
+{
+  "name": "web-firebase",
+  "version": "1.0.0",
+  "description": "firebase project of web service",
+  "main": "index.js",
+  "scripts": {
+    "firebase:login": "firebase login",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "firebase",
+    "web-service"
+  ],
+  "author": "Yigal Ziskand, @ziskand",
+  "license": "ISC",
+  "devDependencies": {
+    "firebase-tools": "^9.3.0"
+  }
+}
