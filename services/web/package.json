@@ -6,7 +6,7 @@
     "deploy:firebase": "npm run deploy --prefix firebase",
     "deploy:clean": "rm -fr __sapper__ ./firebase/public",
     "deploy": "run-s deploy:clean export deploy:firebase",
-    "postinstall": "run-p firebase:install cy:install",
+    "postinstall": "run-p firebase:install",
     "firebase:install": "npm install --prefix firebase",
     "dev": "run-p dev:*",
     "dev:firebase": "npm run dev --prefix firebase",
