@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "deploy:firebase": "npm run deploy --prefix firebase",
-    "deploy:clean": "rm -fr __sapper__ ./firebase/public",
+    "deploy:clean": "rm -fr __sapper__ ./firebase/public && mkdir -p ./firebase/public",
     "deploy": "run-s deploy:clean export deploy:firebase",
     "postinstall": "run-p firebase:install",
     "firebase:install": "npm install --prefix firebase",
