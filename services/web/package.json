@@ -12,7 +12,7 @@
     "dev:firebase": "npm run dev --prefix firebase",
     "dev:sapper": "sapper dev",
     "build": "sapper build --legacy",
-    "export": "NODE_ENV=production sapper export ./firebase/public --legacy --entry /admin",
+    "export": "NODE_ENV=production sapper export ./firebase/public --legacy",
     "start": "node __sapper__/build"
   },
   "dependencies": {
