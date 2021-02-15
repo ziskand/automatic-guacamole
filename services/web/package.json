@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "services",
+  "description": "monorepo services",
   "version": "0.0.1",
   "scripts": {
     "deploy:firebase": "npm run deploy --prefix firebase",
