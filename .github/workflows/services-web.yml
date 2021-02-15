@@ -2,11 +2,9 @@ name: CI for the web service
 
 on:
   push:
-    # paths:
-    #   - "services/web/**"
-    #   - "!services/web/firebase/functions/**"
-    branches:
-      - add-deployment-gh-action
+    paths:
+      - "services/web/**"
+      - "!services/web/firebase/functions/**"
 
 jobs:
   test:
