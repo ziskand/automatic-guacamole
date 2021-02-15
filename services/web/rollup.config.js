@@ -8,6 +8,7 @@ import sveltePreprocess from "svelte-preprocess";
 import tailwindcss from "tailwindcss";
 import config from "sapper/config/rollup.js";
 import pkg from "./package.json";
+import url from '@rollup/plugin-url';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
@@ -42,6 +43,10 @@ export default {
 				},
 				emitCss: !test,
 				preprocess: sveltePreprocessOptions,
+			}),
+			url({
+				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
+				publicPath: '/client/'
 			}),
 			resolve({
 				browser: true,
@@ -97,6 +102,11 @@ export default {
 					hydratable: true,
 				},
 				preprocess: sveltePreprocessOptions,
+			}),
+			url({
+				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
+				publicPath: '/client/',
+				emitFiles: false // already emitted by client build
 			}),
 			resolve({
 				dedupe: ["svelte"],
